@@ -2,11 +2,11 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
   def artist_name
-    self.artist.name
+    self.artist.name if artist 
   end
 
-  def artist_name=(name)
-    self.name = name 
+  def artist_name=(artist_name)
+    self.name = name
   end
 
 
