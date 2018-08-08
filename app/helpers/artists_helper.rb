@@ -1,6 +1,6 @@
 module ArtistsHelper
 
-  def display_artist(artist)
+  def display_artist(artist_name)
     if artist
       artist_path(@artist)
     else
