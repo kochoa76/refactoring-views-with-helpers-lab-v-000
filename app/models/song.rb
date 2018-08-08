@@ -6,6 +6,14 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name=(name)
-    self.artist.name = name  
+    self.artist.name= name
   end
+
+
+  # song = Song.new(title: "Mad World")
+  # song.artist_name = "Tears for Fears"
+  # song.save
+  # expect(song.artist_name).to eq "Tears for Fears"
+
+
 end
